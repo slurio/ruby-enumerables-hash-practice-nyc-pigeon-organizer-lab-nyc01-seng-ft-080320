@@ -5,6 +5,7 @@ def nyc_pigeon_organizer(data)
     value.each do |inner_key, names|
       names.each do |name|
         if !new_hash[name]
+          binding.pry
           new_hash[name] = {}
         end
         if !new_hash[name][key]
